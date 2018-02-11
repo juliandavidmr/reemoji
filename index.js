@@ -12,7 +12,11 @@ const emojis = {
 	BeamingFaceWithSmilingEyes: {
 		plain: [r('^_^'), r('☜(⌒▽⌒)☞')],
 		pretty: '😁'
-	}
+	},
+	GrinningCatFace: {
+		plain: ['₍˄·͈༝·͈˄₎◞ ̑̑ෆ⃛'],
+		pretty: '😺'
+	}	
 }
 
 /**
