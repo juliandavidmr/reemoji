@@ -8,8 +8,6 @@ instead of<br/>
 
 ## Usage
 
-**_Not yet available_**
-
 ```javascript
 var reemoji = require('reemoji');
 
@@ -19,8 +17,9 @@ console.log(reemoji.translate(`Hello :D, I am :) and also ^_^. I like ₍˄·͈�
 
 ### Features
 
-- There are many figures of ascii cats
+- Dozens of emojis available
 - Many faces with different emotions
+- There are many figures of ascii cats
 - Zero dependencies _(0 packages npm)_
 
 ## License
