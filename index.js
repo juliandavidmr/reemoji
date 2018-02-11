@@ -1,56 +1,4 @@
-var cats = require('./ascii/cats.json');
-
-const emojis = {
-	SlightlyFace: {
-		plain: [':)', ':-)', '=]', '=)', ':]'],
-		pretty: '🙂',
-		names: ['slightly face', 'slightly', 'smile']
-	},
-	GrinningFace: {
-		plain: [':D', ':-D', '=D'],
-		pretty: '😀',
-		names: ['grinning', 'mouth', 'showing teeth']
-	},
-	SweatSmile: {
-		plain: ['\':)', '\':-)', '\'=)', '\':D', '\':-D', '\'=D'],
-		pretty: '😓'
-	},
-	Laughing: {
-		plain: ['>:)', '>;)', '>:-)', '>=)'],
-		pretty: '😂'
-	},
-	WinkingFace: {
-		plain: [';)', ';-)', '*-)', '*)', ';-]', ';]', ';D', ';^)'],
-		pretty: '😉',
-		names: ['Wink', 'Wink Face', 'Winky Face']
-	},
-	DowncastFaceSweat: {
-		plain: ['\':(', '\':-(', '\'=(', '\'=['],
-		pretty: '😓',
-		names: [' Hard Work', 'Sad Sweat Face']
-	},
-	BeamingFaceWithSmilingEyes: {
-		plain: ['^_^', '☜(⌒▽⌒)☞'],
-		pretty: '😁'
-	},
-	CatFace: {
-		plain: cats,
-		pretty: '😺'
-	},
-	PersonShrugging: {
-		plain: ['¯\\_(ツ)_/¯', '¯\\_( ͡° ͜ʖ ͡°)_/¯'],
-		pretty: '🤷'
-	},
-	KissingHeart: {
-		plain: [':*', ':-*', '=*', ':^*'],
-		pretty: '😘',
-		names: ['Blow A Kiss', 'Blowing Kiss', 'Kissing']
-	},
-	Heart: {
-		plain: ['<3'],
-		pretty: '❤️'
-	}
-}
+const emojis = require('./emojis');
 
 /**
  * 
@@ -70,12 +18,12 @@ function r(base_str) {
  * @param {string} text 
  */
 function translate(text) {
-	for (const key in emojis) {
-		const pretty = emojis[key]['pretty'];
-		const plain = emojis[key]['plain'];
-		plain.forEach(emoji_regexp => {
-			text = text.replace(emoji_regexp, pretty);
-		});
+	for (const iterator of emojis) {
+		const pretty = iterator.pretty;
+		const plain = iterator.plain;
+		for (const emoji of plain) {
+			text = text.replace(emoji, pretty);
+		}
 	}
 	return text;
 }
