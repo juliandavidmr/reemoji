@@ -6,6 +6,15 @@ You might want to watch <br/>
 instead of<br/>
 `Hello :D, I am :) and also ^_^`
 
+## Install
+
+```bash
+npm install reemoji --save
+
+# Yarn
+yarn add reemoji
+```
+
 ## Usage
 
 ```javascript
