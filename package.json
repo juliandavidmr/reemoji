@@ -1,6 +1,6 @@
 {
   "name": "reemoji",
-  "version": "1.0.0-1",
+  "version": "1.0.0",
   "description": "Make your flat text emoji prettier",
   "main": "./index.js",
   "private": false,
