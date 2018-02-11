@@ -1,0 +1,29 @@
+{
+  "name": "reemoji",
+  "version": "1.0.0",
+  "description": "Make your flat text emoji prettier",
+  "main": "./index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliandavidmr/reemoji.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juliandavidmr/reemoji/issues"
+  },
+  "homepage": "https://github.com/juliandavidmr/reemoji#readme",
+  "devDependencies": {
+    "gulp-mocha": "^5.0.0",
+    "chai": "^4.1.2",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {}
+}
