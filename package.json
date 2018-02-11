@@ -1,11 +1,19 @@
 {
   "name": "reemoji",
-  "version": "1.0.0",
+  "version": "1.0.0-1",
   "description": "Make your flat text emoji prettier",
   "main": "./index.js",
+  "private": false,
   "directories": {
     "test": "test"
   },
+  "files": [
+    "ascii",
+    "emojis.js",
+    "index.js",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "test": "gulp test"
   },
@@ -13,8 +21,8 @@
     "type": "git",
     "url": "git+https://github.com/juliandavidmr/reemoji.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ascii", "emoji", "translate"],
+  "author": "Julian David <juliandavidmr> (https://github.com/juliandavidmr)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/juliandavidmr/reemoji/issues"
