@@ -21,7 +21,11 @@
     "type": "git",
     "url": "git+https://github.com/juliandavidmr/reemoji.git"
   },
-  "keywords": ["ascii", "emoji", "translate"],
+  "keywords": [
+    "ascii",
+    "emoji",
+    "translate"
+  ],
   "author": "Julian David <juliandavidmr> (https://github.com/juliandavidmr)",
   "license": "MIT",
   "bugs": {

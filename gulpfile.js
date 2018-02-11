@@ -10,10 +10,4 @@ gulp.task("test", function () {
     }))
 })
 
-gulp.task("watch", () => {
-  gulp.watch("src/*", ["test"])
-})
-
-gulp.watch("test/*", ["test"])
-
 gulp.task("default", ["test"])
