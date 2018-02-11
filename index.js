@@ -1,22 +1,55 @@
+var cats = require('./ascii/cats.json');
+
 const emojis = {
 	SlightlyFace: {
-		plain: [r(':)')],
+		plain: [':)', ':-)', '=]', '=)', ':]'],
 		pretty: '🙂',
 		names: ['slightly face', 'slightly', 'smile']
 	},
 	GrinningFace: {
-		plain: [r(':D')],
+		plain: [':D', ':-D', '=D'],
 		pretty: '😀',
 		names: ['grinning', 'mouth', 'showing teeth']
 	},
+	SweatSmile: {
+		plain: ['\':)', '\':-)', '\'=)', '\':D', '\':-D', '\'=D'],
+		pretty: '😓'
+	},
+	Laughing: {
+		plain: ['>:)', '>;)', '>:-)', '>=)'],
+		pretty: '😂'
+	},
+	WinkingFace: {
+		plain: [';)', ';-)', '*-)', '*)', ';-]', ';]', ';D', ';^)'],
+		pretty: '😉',
+		names: ['Wink', 'Wink Face', 'Winky Face']
+	},
+	DowncastFaceSweat: {
+		plain: ['\':(', '\':-(', '\'=(', '\'=['],
+		pretty: '😓',
+		names: [' Hard Work', 'Sad Sweat Face']
+	},
 	BeamingFaceWithSmilingEyes: {
-		plain: [r('^_^'), r('☜(⌒▽⌒)☞')],
+		plain: ['^_^', '☜(⌒▽⌒)☞'],
 		pretty: '😁'
 	},
-	GrinningCatFace: {
-		plain: ['₍˄·͈༝·͈˄₎◞ ̑̑ෆ⃛'],
+	CatFace: {
+		plain: cats,
 		pretty: '😺'
-	}	
+	},
+	PersonShrugging: {
+		plain: ['¯\\_(ツ)_/¯', '¯\\_( ͡° ͜ʖ ͡°)_/¯'],
+		pretty: '🤷'
+	},
+	KissingHeart: {
+		plain: [':*', ':-*', '=*', ':^*'],
+		pretty: '😘',
+		names: ['Blow A Kiss', 'Blowing Kiss', 'Kissing']
+	},
+	Heart: {
+		plain: ['<3'],
+		pretty: '❤️'
+	}
 }
 
 /**
